@@ -10,5 +10,5 @@ body{
 }
 .round-img{
     border: 10px solid grey;
-    border-radius: 700px;
+    border-radius: 50%;
 }
