@@ -1,0 +1,10 @@
+body{
+    background-color: #cecece;
+}
+.card{
+    min-height: 200px;
+    background-color: rgba(255,255,255, 0.4);
+    border: 1px solid gainsboro;
+    box-shadow: 7px 5px rgba(255,255,255,0.8);
+    margin-bottom: 20px;
+}
