@@ -13,3 +13,11 @@ body{
     border-radius: 50%;
     filter: opacity(40%);
 }
+.table-fit{
+    width: 50%;
+}
+@media only screen and (max-width: 992px) {
+    .table-fit{
+        width: 100%;
+    }
+  }
