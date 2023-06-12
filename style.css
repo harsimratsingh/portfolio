@@ -11,4 +11,5 @@ body{
 .round-img{
     border: 10px solid grey;
     border-radius: 50%;
+    filter: opacity(40%);
 }
