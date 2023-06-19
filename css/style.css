@@ -1,5 +1,6 @@
 body{
     background-color: #ecece5;
+    height: 100%;
 }
 .card{
     color:rgb(12, 12, 11);
@@ -17,8 +18,11 @@ body{
 .table-fit{
     width: 50%;
 }
+
+
+
 @media only screen and (max-width: 992px) {
     .table-fit{
         width: 100%;
     }
-  }
+}
