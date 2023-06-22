@@ -1,28 +1,91 @@
 body{
-    background-color: #ecece5;
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-.card{
-    color:rgb(12, 12, 11);
-    min-height: 200px;
-    background-color: rgba(185, 179, 179, 0.4);
-    border: 1px solid gainsboro;
-    box-shadow: 7px 5px rgba(73, 72, 72, 0.8);
-    margin-bottom: 20px;
+header{
+    flex: 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
 }
-.round-img{
-    border: 10px solid grey;
-    border-radius: 50%;
-    filter: opacity(40%);
+.nav a{
+    text-decoration: none;
+    color: white;
 }
-.table-fit{
-    width: 50%;
+.nav a:hover{
+    color: #ddd;
+}
+.home{
+    margin-right: auto;
+}
+main{
+    padding: 20px;
+    flex: 1;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+}
+.content, .sidebar{
+    padding: 10px;
+    box-shadow: 7px 5px 5px #aaa;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #888;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.contentHeader{
+    flex: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contentHeader h1{
+    display: inline;
+    margin: 0;
+}
+.contentHeader .searchBox{
+    padding: 2px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    align-self: flex-start;
+    display: inline-flex;
+}
+.searchBox .searchIcon{
+    flex: 0;
+}
+.searchBox .searchInput{
+    flex: 1;
+    border: 0;
+}
+.searchBox .searchButton{
+    flex: 0;
+    padding: 6px;
+}
+
+.projects{
+    flex: 2;
+}
+.certs{
+    flex: 1;
 }
 
 
-
-@media only screen and (max-width: 992px) {
-    .table-fit{
-        width: 100%;
-    }
+.sidebar h2{
+    margin: 0;
+}
+footer{
+    margin-top: auto;
+    background-color: #888;
+    text-align: center;
+    padding: 5px;
 }
