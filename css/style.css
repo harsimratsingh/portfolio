@@ -46,15 +46,15 @@ main > div, .skill{
 .impression{
     padding: 0;
     grid-area: Impression;
-    display: flex;
     justify-content: space-around;
     background-color: white;
 }
 .impression > img{
-    width: 10rem;
     height: 10rem;
+    float: left;
 }
 .impression > h1{
+    border: 1px solid red;
     display: inline;
     padding: 0;
     margin: 0;
@@ -67,6 +67,10 @@ main > div, .skill{
     flex-direction: column;
     padding: 10px;
     align-items: center;
+}
+.sidebar .thumbnail:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
 }
 .sidebar > h2{
     margin: 0;
@@ -98,6 +102,10 @@ main > div, .skill{
 .content .skill{
     text-align: center;
 }
+.skill .thumbnail{
+    max-height: 200px;
+    overflow: scroll;
+}
 @media (max-width: 760px){
     main{
         flex: 1;
@@ -113,5 +121,8 @@ main > div, .skill{
         grid-area: Content;
         display: flex;
         flex-direction: column;
+    }
+    .skill .thumbnail{
+        max-height: 500px;
     }
 }
